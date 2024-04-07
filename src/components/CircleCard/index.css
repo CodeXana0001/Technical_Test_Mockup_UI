@@ -1,0 +1,21 @@
+.clickable-card {
+    border-radius: 50%; /* Make the card circular */
+    background-color: #f0f0f0; /* Set background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transition: box-shadow 0.3s ease; /* Add transition effect for shadow */
+
+    /* Center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover effect */
+.clickable-card.hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Increase shadow effect on hover */
+}
+
+/* Click effect */
+.clickable-card.clicked {
+    transform: scale(0.95); /* Apply scaling effect on click */
+}

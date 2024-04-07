@@ -1,10 +1,46 @@
-.App {
-  text-align: center;
+
+.Background {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.SearchIconButton {
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(72, 0, 98, 0.8);
+}
+
+.WeatherIcon {
+  float: right;
+  height: 170px;
+  transform: translateY(-50%);
+}
+
+.Content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.MainInfo {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+}
+
+.Temperature {
+  font-size: 50px;
+  font-weight: bold;
+  color: rebeccapurple;
+}
+
+p {
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -1,0 +1,38 @@
+.input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    color: #777;
+    pointer-events: none;
+    transition: top 0.2s, font-size 0.2s;
+}
+
+.input-field {
+    width: 500px;
+    height: 9px;
+    padding: 25px 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label {
+    top: -12px;
+    font-size: 12px;
+}
+
+.input-field:focus {
+    border-color: mediumpurple;
+}
