@@ -32,7 +32,7 @@ function App() {
                   </div>
               </div>
               <div className="MainInfo" style={{marginTop: 50}}>
-                  <img src={sun} className="WeatherIcon" alt="background-image" />
+                  <img src={weather.main === 'Rain' ? cloud : sun} className="WeatherIcon" alt="background-image" />
                   <div style={{width: '100%'}}>
                       <p>Today's Weather</p>
                       <p className="Temperature">{weather.temp ?? '-'}&deg;</p>
